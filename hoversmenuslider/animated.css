@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+body{
+    background-color: rgb(199, 203, 206);
+    height: 100vh;
+}
+
+.main{
+    --hederheght:5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--hederheght) 1fr 5rem;
+    grid-template-areas: "header" "main" "footer";
+   min-height: 100vh;
+   /* height:100%; */
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+        
+    grid-area: header;
+   z-index: 1;
+    /* z-index: 9; */
+    /* opacity: 99; */
+    /* background-color: white; */
+}
+.rowofhaedr  {
+    display: flex;
+}
+.rowofhaedr >div{
+    
+    margin-right: 30px;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+header {
+    top: 0;
+    position: sticky;
+    background-color: white;
+    /* z-index: 9; */
+}
+#banner{
+    /* height: calc(100vh - 5rem); */
+    --bannerheight:300px;
+    top: 80px;
+    /* transform: translateY(calc(-100% - 75px)); */
+
+    /* top:calc(-100% - 5rem); */
+    width: 100%;
+    height: calc(100vh - var(--hederheght));
+    background-color: yellow;
+    color: black;
+    position: fixed;
+    /* --hegthonnon:-200px; */
+    /* display: none; */
+    transform: translateY(-800px);
+    transition: all 1s;
+    opacity: 0.8.2;
+    z-index: 9;
+}
+#bannertwo{
+    /* height: calc(100vh - 5rem); */
+    --bannerheight:300px;
+    top: 80px;
+    /* transform: translateY(calc(-100% - 75px)); */
+
+    /* top:calc(-100% - 5rem); */
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: yellow;
+    color: black;
+    position: fixed;
+    /* --hegthonnon:-200px; */
+    /* display: none; */
+    transform: translateY(-800px);
+    transition: all 2s;
+    opacity: 0.8.2;
+    z-index: 9;
+}
+
+#bannerthree{
+    /* height: calc(100vh - 5rem); */
+    --bannerheight:300px;
+    top: 5rem;
+    /* transform: translateY(calc(-100% - 75px)); */
+
+    /* top:calc(-100% - 5rem); */
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: yellow;
+    color: black;
+    position: fixed;
+    /* --hegthonnon:-200px; */
+    /* display: none; */
+    transform: translateY(-800px);
+    transition: all 2s;
+    opacity: 0.8.2;
+    z-index: 9;
+}
+
+.mainsone{
+    position: relative;
+}

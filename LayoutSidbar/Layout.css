@@ -1,0 +1,142 @@
+
+*{
+    margin: 0px;
+    /* padding:0px; */
+    box-sizing: border-box;
+    top: 0;
+
+}
+/* body{
+    --docusaurus-announcement-bar-height: 30px;
+} */
+html{
+    /* overflow: auto; */
+    /* overflow: hidden; */
+}
+
+body{
+   /* overflow-y: hidden; */
+   /* overflow-x: hidden; */
+   height: 100vh;
+ 
+}
+
+:root{
+    --navbar:5rem
+}
+#Grid{
+    /* overflow: hidden; */
+
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows:  var(--navbar) 1fr 5rem;
+    margin-top: 0px;
+    height: 100%;
+    
+   
+    
+}
+footer{
+    color: wheat;
+    background-color: black;
+    grid-area:footer;
+  overflow: auto;
+
+}
+.hh{
+
+    display: flex;
+   
+    /* height: 50px; */
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 100%; */
+    /* padding: 10px 20px; */
+    /* z-index: var(--ifm-z-index-fixed); */
+    background-color: aqua;
+    /* background-color: black; */
+    color: wheat;
+ 
+    position: sticky;
+    top: 0;
+    
+    grid-area: header;
+   z-index: 1;
+}
+main{
+
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    /* top: 4px; */
+    grid-area: main;
+    
+    /* padding-bottom: 200px; */
+}
+
+.content{
+    width: 75%;
+    
+}
+/* width: 25%; */
+aside{
+    
+    display: flex;
+    justify-content: center;
+   
+    height: 100%;
+   
+    width: 25%;
+   
+    background: chartreuse;
+    
+    
+  
+}
+
+
+ul{
+   /* here top 80px is equal to 5rem */
+    /* scrollbar-track-color: black; */
+   
+     top: 80px;
+    position: sticky;
+    height: calc(100vh - 5rem);
+    /* max-height: 100vh;  */
+    
+  
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    /* align-items: center; */
+    /* overflow: hidden;
+    overflow-y: scroll ; */
+    /* margin-bottom: var(--navbar)-1; */
+    /* padding-bottom: 20px; */
+    
+    
+    overflow: scroll;
+    
+}
+
+
+
+
+/* ul.scrolls{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    
+} */

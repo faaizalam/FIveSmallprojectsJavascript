@@ -1,0 +1,39 @@
+export const products=[
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    {
+        name:"pent",
+        qty:5,
+        brand:"coca"
+    },
+    
+   
+]

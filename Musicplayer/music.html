@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b55d4d0d4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+  </head>
+<body>
+  
+  <div class="main text-3xl bg-red-900 h-[100vh] pt-[30px] flex justify-center items-center p-[20px] font-bold">
+    <div class="musicCont bg-white w-[40%] rounded-md flex items-center  flex-col  h-[85%]">
+      <div  class="mt-[10px]" >
+        <h3>Sad Songs</h3>
+        <!-- <br/> -->
+        <h3 id="artist"></h3>
+      </div>
+      
+      <div  class="mt-[40px]">
+        <img id="imgmusic"  class="rounded-[100px] md:w-[200px] h-[190px] sm:w-[250px]" src="./Images/download (1).jpg" alt="song"></img>
+        
+      </div>
+      <div class="w-[100%] mt-[10px]" id="progressMaincont">
+      <div id="durationAl" class="flex justify-between m-[10px]">
+        <div class="text-sm" id="currenttime"></div>
+        <div class="text-sm" id="duration"></div>
+      </div> 
+      <div class=" relative w-[100%] h-[10px] mt-[0.5rem]  rounded-[4rem]  cursor-pointer shadow-md" id="progressdiv">
+        <div class="absolute rounded-[4rem] top-0 appearance-none cursor-pointer   left-0  h-[2px] bg-black" id="progress"></div>
+      </div>
+      </div>
+      <div class="mt-[80px]">
+        <audio class="md:w-[280px] sm:w-[200px]" id="aod" src=""></audio>
+        <div class="contrilmain flex   justify-center items-cente ">
+          <i class="fa-solid fa-arrow-left " id="prev">p</i>
+          <i class="fa-solid fa-play mr-[55px] ml-[55px]" id="play">pp</i>
+          <i class="fa-solid fa-arrow-right" id="forword">f</i>
+          <!-- <i class="fa-solid fa-pause"></i> -->
+
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+</body>
+<!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+<script type="module" src="./Music.js" defer ></script>
+</html>
